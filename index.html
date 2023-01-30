@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
@@ -13,5 +13,50 @@
     />
     <link rel="stylesheet" href="build/css/app.css" />
   </head>
-  <body></body>
+  <body>
+    <header class="header">
+      <div class="header__bar header__container">
+        <div class="header__logo">
+          <img src="build/img/logo.svg" alt="logo real state" />
+        </div>
+
+        <div class="nav">
+          <a href="#" class="nav__link">Nosotros</a>
+          <a href="#" class="nav__link">Propiedades</a>
+          <a href="#" class="nav__link">Blog</a>
+          <a href="#" class="nav__link">Testimoniales</a>
+          <a href="#" class="nav__link">Contacto</a>
+        </div>
+      </div>
+
+      <div class="header__container">
+        <div class="header__content">
+          <h1 class="header__heading">
+            Encuentra tu casa de lujo al mejor precio
+          </h1>
+
+          <p class="header__text">
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Aperiam
+            aut fuga explicabo voluptatibus magni dignissimos. Eos dolorem
+            asperiores.
+          </p>
+
+          <picture>
+            <source srcset="build/img/imagenHeader.avif" type="image/avif" />
+            <source srcset="build/img/imagenHeader.webp" type="image/webp" />
+            <source srcset="build/img/imagenHeader.jpg" type="image/jpeg" />
+            <img
+              class="header__image"
+              loading="lazy"
+              decoding="async"
+              src="build/img/imagenHeader.jpg"
+              alt="imagen header"
+              width="500"
+              height="300"
+            />
+          </picture>
+        </div>
+      </div>
+    </header>
+  </body>
 </html>

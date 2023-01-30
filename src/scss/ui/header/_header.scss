@@ -1,0 +1,87 @@
+@use "../../base/variables" as v;
+@use "../../base/mixins" as m;
+
+.header {
+  background-image: linear-gradient(
+      to right,
+      transparentize(v.$primary-color, 0.1) 0%,
+      transparentize(v.$primary-color, 0.1) 100%
+    ),
+    url(../img/imagenHeader.jpg);
+
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  padding: 8rem 0;
+  position: relative;
+
+  @include m.tablet {
+    padding: 3rem 0 20rem 0;
+  }
+
+  &__bar {
+    display: flex;
+    flex-direction: column;
+
+    @include m.tablet {
+      flex-direction: row;
+      justify-content: space-between;
+      align-items: center;
+    }
+  }
+
+  &__logo {
+    width: 25rem;
+    margin: 0 auto;
+
+    @include m.tablet {
+      margin: 0;
+    }
+  }
+
+  &__content {
+    @include m.tablet {
+      margin-top: 10rem;
+      max-width: 50rem;
+    }
+  }
+
+  &__heading {
+    color: v.$white;
+    font-size: 2.4rem;
+    text-align: center;
+    margin-top: 5rem;
+
+    @include m.tablet {
+      font-size: 4.4rem;
+      text-align: left;
+    }
+  }
+
+  &__text {
+    color: v.$white;
+    display: none;
+
+    @include m.tablet {
+      display: block;
+    }
+  }
+
+  &__image {
+    display: block;
+    position: absolute;
+    bottom: -5rem;
+    right: 0;
+    max-width: 18rem;
+    border-top-left-radius: 2rem;
+    border-bottom-left-radius: 5rem;
+
+    @include m.tablet {
+      max-width: 35rem;
+    }
+
+    @include m.desktopXL {
+      max-width: 60rem;
+    }
+  }
+}
