@@ -590,8 +590,8 @@ p {
   transition-property: background-color;
   transition-duration: 0.3s;
   text-align: center;
-  display: block;
   border-radius: 0.7rem;
+  display: block;
 }
 @media (min-width: 768px) {
   .property__link {
