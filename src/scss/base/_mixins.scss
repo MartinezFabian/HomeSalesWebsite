@@ -45,3 +45,35 @@
   gap: $gap;
   grid-template-columns: repeat($columns, 1fr);
 }
+
+@mixin heading {
+  font-weight: 400;
+  font-size: 3.2rem;
+
+  span {
+    font-weight: 700;
+  }
+
+  &::after {
+    content: "";
+    display: block;
+    height: 1rem;
+    width: 13rem;
+    margin-top: 1rem;
+    background-image: linear-gradient(
+      to right,
+      v.$primary-color 0%,
+      v.$primary-color 50%,
+      lighten(v.$primary-color, 20%) 50%,
+      lighten(v.$primary-color, 20%) 100%
+    );
+
+    @include tablet {
+      width: 16rem;
+    }
+  }
+
+  @include tablet {
+    font-size: 4rem;
+  }
+}
