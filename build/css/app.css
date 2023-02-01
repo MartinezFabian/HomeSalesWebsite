@@ -646,6 +646,12 @@ p {
   text-align: center;
   font-size: 2.2rem;
 }
+@media (min-width: 1024px) {
+  .featured-property__heading {
+    text-align: left;
+    font-size: 3rem;
+  }
+}
 .featured-property__text {
   color: #ffffff;
 }
