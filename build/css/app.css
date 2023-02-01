@@ -824,3 +824,40 @@ p {
     display: inline-block;
   }
 }
+
+.footer {
+  background-color: #3b4862;
+  padding-top: 5rem;
+  margin-top: 5rem;
+}
+@media (min-width: 768px) {
+  .footer__grid {
+    display: grid;
+    gap: 2rem;
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+.footer__box:last-child {
+  margin: 2rem;
+}
+.footer__heading {
+  color: #ffffff;
+  font-size: 2rem;
+  text-transform: uppercase;
+}
+.footer__text {
+  color: #ffffff;
+}
+.footer__nav {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+.footer__copyright {
+  color: #ffffff;
+  margin-bottom: 0;
+  margin-top: 5rem;
+  background-color: #313c52;
+  text-align: center;
+  padding: 1rem;
+}
